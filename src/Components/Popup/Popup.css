@@ -1,0 +1,45 @@
+.popup{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--clr-white-1);
+    width: 100%;
+    left: 0;
+    top: 3rem;
+    height: calc(100svh - 3rem);
+}
+
+.popup.open{
+    display: block;
+}
+
+
+@media only screen and (min-width: 475px){
+
+}
+
+@media only screen and (min-width: 640px){
+    .popup.open{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 1024px){
+
+}
+
+@media only screen and (min-width: 1200px){
+
+}
+
+@media only screen and (min-width: 1440px){
+
+}
+
+@media only screen and (min-width: 1536px){
+
+}

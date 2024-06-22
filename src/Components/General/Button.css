@@ -1,0 +1,78 @@
+.btn{
+    cursor: pointer;
+    padding: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 8px 22px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--clr-purple);
+    color: var(--clr-purple);
+    background-color: var(--clr-white-1);
+    text-align: center;
+    transition: all 250ms;
+}
+
+.btn.signin_desktop{
+    display: none;
+}
+
+.btn:hover{
+    border-color: var(--clr-white-1);
+    color: var(--clr-white-1);
+    background-color: var(--clr-purple);
+}
+  
+.btn.explore_btn{
+    width: 100%;
+}
+
+.btn.getstarted_btn{
+    color: var(--clr-white-1);
+    background-color: var(--clr-purple);
+}
+
+.btn.btn.getstarted_btn:hover{
+    border: 1px solid var(--clr-purple);
+    color: var(--clr-purple);
+    background-color: var(--clr-white-1);
+}
+
+  
+@media only screen and (min-width: 475px){
+
+}
+
+@media only screen and (min-width: 640px){
+    .btn.signin_desktop{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 1024px){
+    .btn.explore_btn{
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .btn{
+        padding: 10px 30px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .btn{
+        padding: 12px 32px;
+    }
+}
+
+@media only screen and (min-width: 1536px){
+
+}

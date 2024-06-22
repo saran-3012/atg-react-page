@@ -1,0 +1,801 @@
+.signin_signup_container{
+    margin-top: 2.5rem;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.signin_or_signup{
+    display: flex;
+    gap: 1.75rem;
+}
+
+
+.signin_signup_selector{
+    font-weight: 600;
+    color: var(--clr-grey-3);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    transition: all 250ms;
+}
+
+.signin_signup_selector::after{
+    content: "";
+    width: 0%;
+    background-color: var(--clr-purple);
+    height: 2px;
+    transition: all 250ms;
+}
+
+.signin_signup_selector.active{
+    color: var(--clr-purple);
+}
+
+.signin_signup_selector.active::after{
+    width: 100%;
+}
+
+.signin_signup_options{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+.other_auth_options{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.connect_with_separator{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.connect_with_separator > p{
+    background-color: var(--clr-grey-1);
+    min-width: 1rem;
+    height: 2px;
+    flex-grow: 1;
+}
+
+.connect_with_separator > span{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.auth_credentials{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth_credentials.active{
+    display: flex;
+}
+
+.auth_credentials_input{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.auth_credentials_input > input{
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 8px;
+    border: 1px solid var(--clr-grey-4);
+    background-color: var(--clr-white-1);
+    outline: none;
+}
+
+.auth_extra_credentials{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.auth_extra_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.auth_extra_inner{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.auth_extra_inner > input{
+    border-color: var(--clr-purple);
+    accent-color: var(--clr-purple);
+    cursor: pointer;
+}
+
+.signin_submit{
+    background-color: transparent;
+    border: 1px solid var(--clr-purple);
+    border-radius: 0.5rem;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.auth_credentials_password{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.password_strength{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.password_strength > div{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.password_strength > div > p{
+    width: 100%;
+    height: 4px;
+    background-color: var(--clr-white-1);
+    border-radius: 0.25rem;
+}
+
+.password_strength > span{
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--clr-grey-3);
+}
+
+.auth_extra_2{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.signup_tc_text{
+    text-align: center;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 12px;
+    color: var(--clr-grey-2);
+}
+
+.signup_tc_text > span{
+    color: var(--clr-black);
+}
+
+.signup_submit{
+    background-color: var(--clr-purple);
+    border: 1px solid var(--clr-purple);
+    color: var(--clr-white-1);
+    border-radius: 0.5rem;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 475px){
+
+}
+
+@media only screen and (min-width: 640px){
+
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 1024px){
+    .signin_signup_container{
+        margin-top: 0;
+        width: 36%;
+        display: flex;
+        align-items: initial;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .signin_or_signup{
+        display: flex;
+        gap: 1.75rem;
+    }
+    
+    
+    .signin_signup_selector{
+        font-weight: 600;
+        color: var(--clr-grey-3);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: all 250ms;
+    }
+    
+    .signin_signup_selector::after{
+        content: "";
+        width: 0%;
+        background-color: var(--clr-purple);
+        height: 2px;
+        transition: all 250ms;
+    }
+    
+    .signin_signup_selector.active{
+        color: var(--clr-purple);
+    }
+    
+    .signin_signup_selector.active::after{
+        width: 100%;
+    }
+    
+    .signin_signup_options{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    
+    .other_auth_options{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .connect_with_separator{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .connect_with_separator > p{
+        background-color: var(--clr-grey-1);
+        min-width: 1rem;
+        height: 2px;
+        flex-grow: 1;
+    }
+    
+    .connect_with_separator > span{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    .auth_credentials{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    
+    .auth_credentials.active{
+        display: flex;
+    }
+    
+    .auth_credentials_input{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .auth_credentials_input > input{
+        width: 100%;
+        border-radius: 0.5rem;
+        padding: 8px;
+        border: 1px solid var(--clr-grey-4);
+        background-color: var(--clr-white-1);
+    }
+    
+    .auth_extra_credentials{
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    
+    .auth_extra_1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .auth_extra_inner{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    .auth_extra_inner > input{
+        border-color: var(--clr-purple);
+        accent-color: var(--clr-purple);
+    }
+    
+    .signin_submit{
+        background-color: transparent;
+        border: 1px solid var(--clr-purple);
+        border-radius: 0.5rem;
+        padding: 8px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .auth_credentials_password{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .password_strength{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .password_strength > div{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+    
+    .password_strength > div > p{
+        width: 100%;
+        height: 4px;
+        background-color: var(--clr-white-1);
+        border-radius: 0.25rem;
+    }
+    
+    .password_strength > span{
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--clr-grey-3);
+    }
+    
+    .auth_extra_2{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .signup_tc_text{
+        text-align: center;
+        font-weight: 400;
+        line-height: 18px;
+        font-size: 12px;
+        color: var(--clr-grey-2);
+    }
+    
+    .signup_tc_text > span{
+        color: var(--clr-black);
+    }
+    
+    .signup_submit{
+        background-color: var(--clr-purple);
+        border: 1px solid var(--clr-purple);
+        color: var(--clr-white-1);
+        border-radius: 0.5rem;
+        padding: 8px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .signin_signup_container{
+        width: 36%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+    }
+    
+    .signin_or_signup{
+        display: flex;
+        gap: 1.75rem;
+    }
+    
+    
+    .signin_signup_selector{
+        font-weight: 600;
+        color: var(--clr-grey-3);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: all 250ms;
+    }
+    
+    .signin_signup_selector::after{
+        content: "";
+        width: 0%;
+        background-color: var(--clr-purple);
+        height: 2px;
+        transition: all 250ms;
+    }
+    
+    .signin_signup_selector.active{
+        color: var(--clr-purple);
+    }
+    
+    .signin_signup_selector.active::after{
+        width: 100%;
+    }
+    
+    .signin_signup_options{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .other_auth_options{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .connect_with_separator{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .connect_with_separator > p{
+        background-color: var(--clr-grey-1);
+        min-width: 1rem;
+        height: 2px;
+        flex-grow: 1;
+    }
+    
+    .connect_with_separator > span{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    .auth_credentials{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .auth_credentials.active{
+        display: flex;
+    }
+    
+    .auth_credentials_input{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .auth_credentials_input > input{
+        width: 100%;
+        border-radius: 0.5rem;
+        padding: 10px;
+        border: 1px solid var(--clr-grey-4);
+        background-color: var(--clr-white-1);
+    }
+    
+    .auth_extra_credentials{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .auth_extra_1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .auth_extra_inner{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    .auth_extra_inner > input{
+        border-color: var(--clr-purple);
+        accent-color: var(--clr-purple);
+    }
+    
+    .signin_submit{
+        background-color: transparent;
+        border: 1px solid var(--clr-purple);
+        border-radius: 0.5rem;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .auth_credentials_password{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .password_strength{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .password_strength > div{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+    
+    .password_strength > div > p{
+        width: 100%;
+        height: 4px;
+        background-color: var(--clr-white-1);
+        border-radius: 0.25rem;
+    }
+    
+    .password_strength > span{
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--clr-grey-3);
+    }
+    
+    .auth_extra_2{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .signup_tc_text{
+        text-align: center;
+        font-weight: 400;
+        line-height: 18px;
+        font-size: 12px;
+        color: var(--clr-grey-2);
+    }
+    
+    .signup_tc_text > span{
+        color: var(--clr-black);
+    }
+    
+    .signup_submit{
+        background-color: var(--clr-purple);
+        border: 1px solid var(--clr-purple);
+        color: var(--clr-white-1);
+        border-radius: 0.5rem;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .signin_signup_container{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .signin_or_signup{
+        display: flex;
+        gap: 2rem;
+    }
+    
+    
+    .signin_signup_selector{
+        font-weight: 600;
+        color: var(--clr-grey-3);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        transition: all 250ms;
+    }
+    
+    .signin_signup_selector::after{
+        content: "";
+        width: 0%;
+        background-color: var(--clr-purple);
+        height: 2px;
+        transition: all 250ms;
+    }
+    
+    .signin_signup_selector.active{
+        color: var(--clr-purple);
+    }
+    
+    .signin_signup_selector.active::after{
+        width: 100%;
+    }
+    
+    .signin_signup_options{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    
+    .other_auth_options{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .connect_with_separator{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .connect_with_separator > p{
+        background-color: var(--clr-grey-1);
+        min-width: 1rem;
+        height: 2px;
+        flex-grow: 1;
+    }
+    
+    .connect_with_separator > span{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    .auth_credentials{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .auth_credentials.active{
+        display: flex;
+    }
+    
+    .auth_credentials_input{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .auth_credentials_input > input{
+        width: 100%;
+        border-radius: 0.5rem;
+        padding: 12px;
+        border: 1px solid var(--clr-grey-4);
+        background-color: var(--clr-white-1);
+    }
+    
+    .auth_extra_credentials{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .auth_extra_1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .auth_extra_inner{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    .auth_extra_inner > input{
+        border-color: var(--clr-purple);
+        accent-color: var(--clr-purple);
+    }
+    
+    .signin_submit{
+        background-color: transparent;
+        border: 1px solid var(--clr-purple);
+        border-radius: 0.5rem;
+        padding: 12px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .auth_credentials_password{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .password_strength{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .password_strength > div{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+    
+    .password_strength > div > p{
+        width: 100%;
+        height: 4px;
+        background-color: var(--clr-white-1);
+        border-radius: 0.25rem;
+    }
+    
+    .password_strength > span{
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--clr-grey-3);
+    }
+    
+    .auth_extra_2{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .signup_tc_text{
+        text-align: center;
+        font-weight: 400;
+        line-height: 18px;
+        font-size: 12px;
+        color: var(--clr-grey-2);
+    }
+    
+    .signup_tc_text > span{
+        color: var(--clr-black);
+    }
+    
+    .signup_submit{
+        background-color: var(--clr-purple);
+        border: 1px solid var(--clr-purple);
+        color: var(--clr-white-1);
+        border-radius: 0.5rem;
+        padding: 12px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 1536px){
+
+}

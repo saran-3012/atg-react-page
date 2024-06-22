@@ -1,0 +1,19 @@
+.scrolltotop{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    height: 3rem;
+    width: 3rem;
+    background-image: var(--default-img);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    padding: none;
+    background-color: transparent;
+}
+
+.scrolltotop:active{
+    background-image: var(--click-img);
+}

@@ -1,0 +1,172 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr-white-1);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar__box_1{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__box_2{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app_logo{
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.app_logo > img{
+    max-height: 2rem;
+}
+
+.searchbar{
+    display: none;
+    height: 2.25rem;
+    width: 14rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: var(--clr-white-3);
+}
+
+.search_input{
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1rem;
+    padding: 0 0.75rem;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(235, 237, 240, 1);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+}
+
+.search_input:focus{
+    border-color: var(--clr-purple);
+}
+
+.search_button{
+    cursor: pointer;
+    height: 100%;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background-color: var(--clr-purple);
+    padding: 0.5rem;
+}
+
+
+@media only screen and (min-width: 475px){
+    .navbar{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 640px){
+    .navbar{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        height: 4rem;
+    }
+
+    .app_logo > img{
+        max-height: 2.25rem;
+    }
+    
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 1024px){
+    .navbar{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        height: 4.5rem;
+    }
+
+    .app_logo > img{
+        max-height: 2.5rem;
+    }
+
+    .searchbar{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .navbar{
+        padding-left: 4rem;
+        padding-right: 4rem;
+        height: 4.5rem;
+    }
+    
+    .navbar__box_2{
+        gap: 1.25rem;
+    }
+    
+    .app_logo > img{
+        max-height: 3rem;
+    }
+    
+    .searchbar{
+        width: 16rem;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .navbar{
+        padding-left: 6.25rem;
+        padding-right: 6.25rem;
+        height: 5rem;
+    }
+    
+    .navbar__box_1{
+        width: 50%;
+    }
+
+    .navbar__box_2{
+        gap: 1.5rem;
+    }
+    
+    .app_logo > img{
+        max-height: 3.75rem;
+    }
+    
+    .searchbar{
+        height: 2.5rem;
+        width: 18.75rem;
+        border-radius: 0.5rem;
+    }
+    
+    .search_button{
+        padding: 0.75rem;
+    }
+}
+
+@media only screen and (min-width: 1536px){
+    .navbar{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}

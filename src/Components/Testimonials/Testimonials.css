@@ -1,0 +1,237 @@
+.testimonials{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;   
+}
+
+.testimonials_wrapper{
+    background-color: var(--clr-white-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.testimonials_header{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.testimonials_header > img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.testimonials_header > h2{
+    font-size: 18px;
+}
+
+.testimonials_wrapper > article{
+    text-align: center;
+    font-size: 12px;
+    color: var(--clr-grey-2);
+}
+
+.testimonials_box{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.audio_box{
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.audio_box > audio{
+    flex-grow: 1;
+}
+
+.audio_box > img{
+    position: absolute;
+    right: 15px;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.testimonials_inner_box_1{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonials_inner_box_1 > img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.testimonials_inner_box_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonials_inner_box_2 > span{
+    color: var(--clr-purple);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.testimonials_inner_box_2 > p{
+    color: var(--clr-blue);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+@media only screen and (min-width: 475px){
+    .testimonials{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 640px){
+    .testimonials{
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .testimonials_header > img{
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .testimonials_header > h2{
+        font-size: 20px;
+    }
+
+    .testimonials_wrapper > article{
+        font-size: 14px;
+    }
+
+    .testimonials_box{
+        gap: 1.5rem;
+    }
+
+    .testimonials_inner_box_1 > img{
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .testimonials_inner_box_2 > span{
+        font-size: 16px;
+    }
+    
+    .testimonials_inner_box_2 > p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 1024px){
+    .testimonials{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .testimonials_wrapper{
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .testimonials_wrapper > article{
+        font-size: 18px;
+        text-align: initial;
+    }
+
+    .testimonials_box{
+        flex-direction: row;
+    }
+
+    .testimonials_header > img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .testimonials_header > h2{
+        font-size: 24px;
+    }
+
+    .audio_box{
+        max-width: 65%;
+    }
+
+    .audio_box > audio{
+        flex-grow: 1;
+    }
+
+    .testimonials_inner_box_1 > img{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+
+    .testimonials_inner_box_2 > span{
+        font-size: 16px;
+    }
+    
+    .testimonials_inner_box_2 > p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .testimonials{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .audio_box{
+        max-width: 66%;
+    }
+
+    .testimonials_inner_box_1 > img{
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+
+    .testimonials_inner_box_2 > span{
+        font-size: 18px;
+    }
+    
+    .testimonials_inner_box_2 > p{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .testimonials{
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
+    }
+
+    .testimonials_inner_box_1 > img{
+        height: 6rem;
+        width: 6rem;
+    }
+}
+
+@media only screen and (min-width: 1536px){
+    .testimonials{
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}

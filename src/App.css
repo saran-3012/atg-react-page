@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --clr-white-1: rgba(255, 255, 255, 1);
+  --clr-white-2: rgba(247, 245, 249, 1);
+  --clr-white-3: rgba(248, 249, 250, 1);
+  --clr-white-4: rgba(247, 253, 255, 1);
+  --clr-grey-1: rgba(206, 212, 218, 1);
+  --clr-grey-2: rgba(109, 116, 122, 1);
+  --clr-grey-3: rgba(147, 156, 163, 1);
+  --clr-grey-4: rgba(235, 237, 240, 1);
+  --clr-purple: rgba(128, 100, 162, 1);
+  --clr-purple-light: rgba(204, 193, 218, 1);
+  --clr-green: rgba(119, 147, 60, 1);
+  --clr-orange: rgba(192, 80, 77, 1);
+  --clr-blue: rgba(0, 150, 200, 1);
+  --clr-black: rgb(0, 0, 0, 1);
+
+}
+
+*, 
+*::after, 
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+img, svg{
+  user-select: none;
+  display: block;
+  max-width: 100%;
+}
+
+
+audio::-webkit-media-controls-panel {
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: var(--clr-purple-light);
+}
+
+audio::-webkit-media-controls-play-button{
+  background-color: var(--clr-white-1);
+  border-radius: 100%;
+}
+
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-time-remaining-display{
+  width: 0;
+  display: none;
+}
+
+audio::-webkit-media-controls-current-time-display{
+  position: absolute;
+  right: 54px;
+  color: var(--clr-purple);
+}
+
+audio::-webkit-media-controls-timeline{
+  width: 100%;
+  accent-color: var(--clr-white-1);
+}
+
+
+
+.hide-overflow{
+  overflow: hidden;
+}

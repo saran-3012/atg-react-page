@@ -1,0 +1,51 @@
+.section_container{
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media only screen and (min-width: 475px){
+    .section_container{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 640px){
+    .section_container{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 1024px){
+    .section_container{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .section_container{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .section_container{
+        padding-left: 6.25rem;
+        padding-right: 6.25rem;
+    }
+}
+
+@media only screen and (min-width: 1536px){
+    .section_container{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}

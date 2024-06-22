@@ -1,0 +1,56 @@
+.auth_button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 8px 20px;
+    border: 1px solid var(--clr-purple);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.auth_button > span {
+    margin: auto;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 475px){
+
+}
+
+@media only screen and (min-width: 640px){
+
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 1024px){
+    .auth_button{
+        padding: 8px 20px;
+    }
+    
+    .auth_button > span {
+        margin: auto;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .auth_button{
+        padding: 10px 22px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .auth_button{
+        padding: 12px 24px;
+    }
+}
+
+@media only screen and (min-width: 1536px){
+
+}

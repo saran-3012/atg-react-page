@@ -1,0 +1,119 @@
+.hobby{
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--clr-white-4);
+}
+
+.hobby_wrapper{
+    background-color: var(--clr-white-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 2.5rem;
+    border: 1px solid var(--clr-grey-1);
+    border-radius: 0.5rem;
+}
+
+.hobby_inner_box{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hobby_inner_box > img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.hobby_inner_box > h2{
+    font-size: 18px;
+}
+
+.hobby_wrapper > p{
+    text-align: center;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 475px){
+    .hobby{
+        margin-top: 3rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 640px){
+    .hobby{
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .hobby_inner_box > img{
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .hobby_inner_box > h2{
+        font-size: 20px;
+    }
+
+    .hobby_wrapper > p{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 1024px){
+    .hobby{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .hobby_wrapper{
+        align-items: flex-start;
+    }
+
+    .hobby_inner_box > img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .hobby_inner_box > h2{
+        font-size: 24px;
+    }
+
+    .hobby_wrapper > p{
+        font-size: 18px;
+        text-align: initial;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .hobby{
+        margin-top: 6rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .hobby{
+        margin-top: 6.5rem;
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
+    }
+}
+
+@media only screen and (min-width: 1536px){
+    .hobby{
+        margin-top: 7rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}

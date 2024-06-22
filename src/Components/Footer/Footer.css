@@ -1,0 +1,179 @@
+.contacts{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.contacts_box{
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.contacts_box > span{
+    font-size: 9px;
+}
+
+.contacts_box:nth-last-of-type(1){
+    gap: 1rem;
+}
+
+.contacts_box > h3{
+    font-weight: 700;
+}
+
+.contacts_icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_icons > img{
+    cursor: pointer;
+}
+
+.contacts_invite{
+    font-size: 12px;
+    display: flex;
+    width: 100%;
+}
+
+.contacts_invite > input{
+    font-weight: 400;
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid var(--clr-purple);
+    border-radius: 8px 0 0 8px;
+    outline: none;
+}
+
+.contacts_invite > button{
+    cursor: pointer;
+    border: 1px solid var(--clr-purple);
+    background-color: var(--clr-purple);
+    color: var(--clr-white-1);
+    border-radius: 0 8px 8px 0;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.footer{
+    display: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--clr-white-2);
+}
+
+@media only screen and (min-width: 475px){
+    .contacts{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 640px){
+    .contacts{
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 1024px){
+    .contacts{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        flex-direction: row;
+        gap: 0;
+    }
+    
+    .contacts_box{
+        font-size: 14px;
+        font-weight: 400;
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+    }
+
+    .contacts_box > span{
+        font-size: 14px;
+    }
+    
+    .contacts_box:nth-last-of-type(1){
+        gap: 1rem;
+    }
+    
+    .contacts_box > h3{
+        font-weight: 700;
+    }
+    
+    .contacts_icons{
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .contacts_invite{
+        font-size: 12px;
+        display: flex;
+        width: 100%;
+    }
+    
+    .contacts_invite > input{
+        font-weight: 400;
+        flex-grow: 1;
+        padding: 12px;
+        border: 1px solid var(--clr-purple);
+        border-radius: 8px 0 0 8px;
+        outline: none;
+    }
+    
+    .contacts_invite > button{
+        border: 1px solid var(--clr-purple);
+        background-color: var(--clr-purple);
+        border-radius: 0 8px 8px 0;
+        color: var(--clr-white-1);
+        font-weight: 600;
+        padding: 12px;
+    }
+    
+    .footer{
+        display: 100%;
+        font-size: 14px;
+        padding: 2rem;
+        text-align: center;
+        background-color: var(--clr-white-2);
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .contacts{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .contacts{
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
+    }
+}
+
+@media only screen and (min-width: 1536px){
+    .contacts{
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
